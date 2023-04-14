@@ -31,13 +31,12 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 20px;
 }
 
 .Item{
-    width: max-content;
+    width: auto;
     border: 1px solid rgb(81, 41, 41);
-    padding: 20px 102px;
+    padding: 50px 50px;
     background:rgb(182, 150, 150);
     
 }
@@ -45,8 +44,8 @@ body {
     cursor: pointer;
 }
 .Item> img{
-    
-    width: 50px 30px;
+    width: auto;
+    height: auto;
 }
 
 .modal {
@@ -72,3 +71,14 @@ body {
     float: right;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+    }
+    .Item {
+        padding: 20px;
+    }
+}
+
