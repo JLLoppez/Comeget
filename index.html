@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <section>
+    <div class="sec">
+        <h1>Countries</h1>
+    </div>
+
+    <div class="container">
+        <div class="grid-wrapper">
+            <div class="Item zone" id="getBrazil" onclick="fetchBrazil('brazil')" ><img src="./img/brazil-.png"></div>
+            <div class="Item zone" id="item2" onclick="fetchCanada('canada')"><img src="./img/canada.png"></div>
+            <div class="Item zone" id="item3"onclick="fetchFrance('france')"><img src="./img/france.png"></div>
+            <div class="Item zone" id="item4"onclick="fetchAngola('angola')"><img src="./img/angola.png"></div>
+            <div class="Item zone" id="item5"onclick="fetchRussia('russia')"><img src="./img/russia.png"></div>
+            <div class="Item zone" id="item6" onclick="fetchJapan('japan')"><img src="./img/japan.png"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeItemModal()">&times;</span>
+        <p>Country Name: <span id="countryName"></span></p>
+        <p>Region: <span id="countryRegion"></span></p>
+        <p>Capital: <span id="countryCapital"></span></p>
+        <p>Population: <span id="countryPopulation"></span></p>
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
